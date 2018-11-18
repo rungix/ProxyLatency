@@ -1,0 +1,36 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg
+*.egg-info
+
+dist
+build
+
+
+# C extensions
+*.so
+
+
+# pcap file
+*.pcap
+
+#project output
+*.txt
+*.png 
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+
+
+# directory
+/download
+/data
+
+
+
+

@@ -1,0 +1,26 @@
+[[source]]
+
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "pypi"
+
+
+[packages]
+
+numpy = "*"
+pexpect = "*"
+aiohttp = "*"
+aioping = "*"
+aiodns = "*"
+pymongo = "*"
+pycurl = "*"
+"bs4" = "*"
+"html5lib" = "*"
+ijson = "*"
+termcolor = "*"
+pick = "*"
+matplotlib = "*"
+
+
+[dev-packages]
+

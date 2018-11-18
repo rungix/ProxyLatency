@@ -1,0 +1,4 @@
+#!/bin/bash
+jq -r '
+.ip + " " + ((.autonomous_system.asn // 0)|tostring) + " " + (((.p80.http.get.headers.server // "") | match("AkamaiGHost|CloudFront|cloudflare-nginx|Highwinds-Software|NetDNA-cache|ECAcc|ECD|ECS|yunjiasu-nginx")).string // ((.p80.http.get.body // "") | match("Cdn Cache Server V2.0|<title>Fcache</title>|<title>Fastly error:|OVH CDN|.jiasule.com|TXNetworks")).string)
+'
