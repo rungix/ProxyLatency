@@ -12,7 +12,7 @@ def main(max_threads=8, host='www.apple.com', ipfile='cdn_ip.txt',
          num_measures='3', username=DB_USER, password=DB_PASS, ip_count=5):
     ip_collection_name = \
         os.path.basename(ipfile + "_" +
-                         datetime.datetime.now().strftime("%y-%m-%d"))
+                         datetime.datetime.now().strftime("%y-%m-%d-%H-%M"))
     import_ip = ImportIP(ip_file=ipfile, max_ips=ip_count,
                          username=username, password=password)
     if not import_ip(ip_collection_name):
